@@ -132,15 +132,7 @@ class SendSms():
 
     def Dsmartgo(self):
 
-        liste = [self.phone, self.phone2, self.phone3, self.phone4, self.phone5]
-
-        bos_olmayan = len([x for x in liste if x != "bos"])
-
-        uygulanan_nolar = 0
-
-        for numara in liste:
-
-            if numara != "bos":
+                    try:
 
                     dsmartgo = requests.post("https://www.dsmartgo.com.tr/web/account/checkphonenumber", data={
 
