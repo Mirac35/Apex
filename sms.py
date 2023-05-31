@@ -132,7 +132,7 @@ class SendSms():
     def Osmanlideal(self):
                 try:
 
-                    r = requests.get(f"https://osmgck.idealdata.com.tr:7850/X%02REQ_SMSDEMO%02{self.mail}%020{numara}")
+                    r = requests.post(f"https://osmgck.idealdata.com.tr:7850/X%02REQ_SMSDEMO%02{self.mail}%020{numara}")
 
                     if r.status_code == 200:
 
