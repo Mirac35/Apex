@@ -1,15 +1,8 @@
 import requests
-
 from random import choice
-
 from string import ascii_lowercase
-
 from bs4 import BeautifulSoup
-
 from colorama import Fore, Style
-
-from time import sleep
-
 
 
 class SendSms():
